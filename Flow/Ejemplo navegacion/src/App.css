@@ -1,0 +1,65 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #eeeeee;
+}
+.menu {
+display: flex;
+gap: 15px;
+padding: 15px;
+background: #222;
+}
+.menu a {
+color: white;
+text-decoration: none;
+}
+.menu a.active {
+color: yellow;
+}
+.contenido {
+padding: 20px;
+}
+.pantalla {
+max-width: 900px;
+margin: auto;
+background: white;
+padding: 20px;
+border: 1px solid #ccc;
+}
+.form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+input,
+button {
+padding: 10px;
+font-size: 16px;
+}
+.error {
+color: red;
+margin: 0;
+}
+.cards {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+.card {
+width: 220px;
+padding: 10px;
+border: 1px solid #ccc;
+background: #fafafa;
+}
+.card img {
+width: 100%;
+}
+.item-carrito,
+.compra,
+.perfil-box,
+.mapa-placeholder {
+border: 1px solid #ccc;
+background: #fafafa;
+padding: 15px;
+margin: 15px 0;
+}
