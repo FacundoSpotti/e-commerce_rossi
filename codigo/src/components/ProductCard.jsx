@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router";
 
 function ProductCard({ producto, onAgregar }) {
+  const [pulse, setPulse] = useState(false);
+
   const sinStock = producto.disponibilidad === "Sin stock";
 
   const badgeClase = {
@@ -11,7 +14,10 @@ function ProductCard({ producto, onAgregar }) {
 
   const handleAgregar = (e) => {
     e.preventDefault();
-    if (!sinStock) onAgregar(producto);
+    if (sinStock) return;
+    onAgregar(producto);
+    setPulse(true);
+    setTimeout(() => setPulse(false), 600);
   };
 
   return (
@@ -21,7 +27,7 @@ function ProductCard({ producto, onAgregar }) {
         <span className="producto-card-categoria">{producto.categoria}</span>
         <button
           type="button"
-          className="producto-card-add"
+          className={`producto-card-add ${pulse ? "pulse" : ""}`}
           onClick={handleAgregar}
           aria-label={`Agregar ${producto.nombre} al carrito`}
           disabled={sinStock}

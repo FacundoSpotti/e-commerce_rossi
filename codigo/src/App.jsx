@@ -21,6 +21,7 @@ function App() {
   const [carrito, setCarrito] = useState([]);
   const [usuarioActivo, setUsuarioActivo] = useState(null);
   const [comprasUsuario, setComprasUsuario] = useState([]);
+  const [queryBusqueda, setQueryBusqueda] = useState("");
 
   const agregarAlCarrito = (producto) => {
     setCarrito((actual) => {
@@ -109,12 +110,24 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          element={<Layout carrito={carrito} usuarioActivo={usuarioActivo} />}
+          element={
+            <Layout
+              carrito={carrito}
+              usuarioActivo={usuarioActivo}
+              queryBusqueda={queryBusqueda}
+              onCambiarBusqueda={setQueryBusqueda}
+            />
+          }
         >
           <Route path="/" element={<Home onAgregar={agregarAlCarrito} />} />
           <Route
             path="/catalogo"
-            element={<Catalogo onAgregar={agregarAlCarrito} />}
+            element={
+              <Catalogo
+                onAgregar={agregarAlCarrito}
+                queryBusqueda={queryBusqueda}
+              />
+            }
           />
           <Route
             path="/producto/:id"

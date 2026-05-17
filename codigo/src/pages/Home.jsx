@@ -2,12 +2,12 @@ import { Link } from "react-router";
 import ProductCard from "../components/ProductCard";
 import MapaPlaceholder from "../components/MapaPlaceholder";
 import { productos } from "../data/productos";
-import heroImg from "../assets/hero.jpg";
 import tallerImg from "../assets/taller.jpg";
 import catGrandes from "../assets/categorias/grandes.jpg";
 import catMedianos from "../assets/categorias/medianos.jpg";
 import catChicos from "../assets/categorias/chicos.jpg";
 import catMochilas from "../assets/categorias/mochilas.jpg";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const categoriasGrid = [
   { nombre: "Bolsos medianos", imagen: catMedianos, ruta: "/catalogo?cat=Bolsos+medianos" },
@@ -18,30 +18,47 @@ const categoriasGrid = [
 
 function Home({ onAgregar }) {
   const destacados = productos.slice(0, 4);
+  const [heroRef, heroVisible] = useScrollReveal();
+  const [bandaRef, bandaVisible] = useScrollReveal();
+  const [seccionRef, seccionVisible] = useScrollReveal();
+  const [tallerRef, tallerVisible] = useScrollReveal();
 
   return (
     <>
       <section className="hero">
-        <div className="hero-texto">
+        <div
+          ref={heroRef}
+          className={`hero-texto reveal ${heroVisible ? "reveal-in" : ""}`}
+        >
           <p className="sobrelinea">Cuero uruguayo hecho a mano</p>
           <h1>Hecho a mano</h1>
-          <p>
+          <p className="hero-bajada">
             En Uruguay, con cuero seleccionado y terminaciones cuidadas. Piezas
             artesanales que acompañan la vida real con belleza, orden y duración.
           </p>
+          <div className="hero-ctas">
+            <Link to="/catalogo" className="btn">
+              Ver colección
+            </Link>
+            <Link to="/#taller" className="link-subrayado">
+              Conocé el taller
+            </Link>
+          </div>
         </div>
-        <div className="hero-foto" style={{ backgroundImage: `url(${heroImg})` }} />
       </section>
 
       <section className="banda">
         <div className="banda-foto" style={{ backgroundImage: `url(${tallerImg})` }} />
-        <div className="banda-texto">
+        <div
+          ref={bandaRef}
+          className={`banda-texto reveal ${bandaVisible ? "reveal-in" : ""}`}
+        >
           <p className="banda-cita">
             “Piezas artesanales creadas por Verónica Rossi para acompañar la
             vida real con belleza, orden y duración.”
           </p>
           <div className="banda-ctas">
-            <Link to="/contacto" className="link-blanco">
+            <Link to="/#taller" className="link-blanco">
               Conocé el taller
             </Link>
             <Link to="/catalogo" className="btn">
@@ -52,7 +69,12 @@ function Home({ onAgregar }) {
       </section>
 
       <div className="container">
-        <h2 className="seccion-titulo">Selección destacada</h2>
+        <h2
+          ref={seccionRef}
+          className={`seccion-titulo reveal ${seccionVisible ? "reveal-in" : ""}`}
+        >
+          Selección destacada
+        </h2>
         <p className="seccion-bajada">
           Modelos elegidos por su carácter, su practicidad y la forma en que
           acompañan todos los días.
@@ -78,11 +100,13 @@ function Home({ onAgregar }) {
       </div>
 
       <div className="container">
-        <section className="institucional">
+        <section
+          id="taller"
+          ref={tallerRef}
+          className={`institucional reveal ${tallerVisible ? "reveal-in" : ""}`}
+        >
           <p className="sobrelinea">Nuestro taller</p>
-          <h2>
-            Diez años haciendo piezas con tiempo, oficio y precisión
-          </h2>
+          <h2>Diez años haciendo piezas con tiempo, oficio y precisión</h2>
           <p>
             ROSSI es el taller de Verónica Rossi, una artesana uruguaya que
             entiende el diseño desde la vida cotidiana. Cada cartera se realiza

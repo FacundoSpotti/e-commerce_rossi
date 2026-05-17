@@ -74,7 +74,7 @@ function DetalleProducto({ onAgregar }) {
           </button>
           <a
             className="whatsapp-link"
-            href={`https://wa.me/59899999999?text=${mensajeWa}`}
+            href={`https://wa.me/59896585422?text=${mensajeWa}`}
             target="_blank"
             rel="noreferrer"
           >
