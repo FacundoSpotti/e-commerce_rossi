@@ -1,6 +1,5 @@
 export const categorias = [
-  "Bolsos grandes",
-  "Bolsos medianos",
-  "Bolsos chicos",
   "Mochilas",
+  "Bolsos grandes",
+  "Bolsos chicos",
 ];

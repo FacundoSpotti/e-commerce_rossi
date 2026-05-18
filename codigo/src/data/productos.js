@@ -1,9 +1,28 @@
-import bolsoClara from "../assets/productos/bolso-clara.jpg";
-import carteraEmilia from "../assets/productos/cartera-emilia.jpg";
-import bandoleraJulia from "../assets/productos/bandolera-julia.jpg";
-import mochilaVera from "../assets/productos/mochila-vera.jpg";
-import toteMartina from "../assets/productos/tote-martina.jpg";
-import morralAna from "../assets/productos/morral-ana.jpg";
+import p1 from "../assets/productos/product (1).png";
+import p2 from "../assets/productos/product (2).png";
+import p3 from "../assets/productos/product (3).png";
+import p4 from "../assets/productos/product (4).png";
+import p5 from "../assets/productos/product (5).png";
+import p7 from "../assets/productos/product (7).png";
+import p8 from "../assets/productos/product (8).png";
+import p9 from "../assets/productos/product (9).png";
+import p10 from "../assets/productos/product (10).png";
+import p11 from "../assets/productos/product (11).png";
+import p12 from "../assets/productos/product (12).png";
+import p13 from "../assets/productos/product (13).png";
+import p14 from "../assets/productos/product (14).png";
+import pia1 from "../assets/productos/product_ia (1).png";
+import pia5 from "../assets/productos/product_ia (5).png";
+import pia6 from "../assets/productos/product_ia (6).png";
+import pia7 from "../assets/productos/product_ia (7).png";
+import pia8 from "../assets/productos/product_ia (8).png";
+import pia9 from "../assets/productos/product_ia (9).png";
+import pia10 from "../assets/productos/product_ia (10).png";
+import pia11 from "../assets/productos/product_ia (11).png";
+import pia12 from "../assets/productos/product_ia (12).png";
+import pia13 from "../assets/productos/product_ia (13).png";
+import pia14 from "../assets/productos/product_ia (14).png";
+import pia15 from "../assets/productos/product_ia (15).png";
 
 const PALETA = {
   negro: "#0e0e0e",
@@ -43,7 +62,7 @@ const bolsosGrandes = [
       "Limpiar con paño suave seco. Hidratar cada tres meses con crema neutra. Evitar humedad prolongada y sol directo.",
     disponibilidad: "Disponible",
     badge: "NUEVO",
-    imagen: bolsoClara,
+    imagen: p1,
   },
   {
     nombre: "Tote Martina",
@@ -56,9 +75,9 @@ const bolsosGrandes = [
     queEntra: "Notebook 13\", cuaderno, billetera, celular, llaves y neceser.",
     cuidado:
       "Limpiar con paño suave. Hidratar cada tres meses con crema neutra para cuero.",
-    disponibilidad: "Sin stock",
-    badge: "SOLD OUT",
-    imagen: toteMartina,
+    disponibilidad: "Disponible",
+    badge: null,
+    imagen: p2,
   },
   {
     nombre: "Bolso Helena",
@@ -72,7 +91,7 @@ const bolsosGrandes = [
     cuidado: "Hidratar cada tres meses. Evitar humedad prolongada.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: bolsoClara,
+    imagen: p3,
   },
   {
     nombre: "Bolso Florencia",
@@ -86,7 +105,7 @@ const bolsosGrandes = [
     cuidado: "Limpiar con paño suave seco. Aplicar crema neutra para cuero.",
     disponibilidad: "Disponible",
     badge: "OFERTA",
-    imagen: toteMartina,
+    imagen: p4,
   },
   {
     nombre: "Bolso Magdalena",
@@ -100,7 +119,7 @@ const bolsosGrandes = [
     cuidado: "Hidratar trimestralmente. Evitar exposición prolongada al sol.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: bolsoClara,
+    imagen: p5,
   },
   {
     nombre: "Bolso Constanza",
@@ -114,7 +133,7 @@ const bolsosGrandes = [
     cuidado: "Mantener en lugar seco. Hidratar cada tres meses.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: toteMartina,
+    imagen: p7,
   },
   {
     nombre: "Bolso Beatriz",
@@ -128,7 +147,7 @@ const bolsosGrandes = [
     cuidado: "Limpiar con paño seco. Aplicar crema neutra cada tres meses.",
     disponibilidad: "Disponible",
     badge: "NUEVO",
-    imagen: bolsoClara,
+    imagen: p8,
   },
   {
     nombre: "Bolso Olivia",
@@ -142,319 +161,7 @@ const bolsosGrandes = [
     cuidado: "Hidratar cada tres meses. Evitar humedad prolongada.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: toteMartina,
-  },
-  {
-    nombre: "Bolso Aurora",
-    precio: 9000,
-    descripcion:
-      "Pieza de gran capacidad y silueta cuadrada. Acompaña sin esfuerzo.",
-    descriptor: "Cuero uruguayo · silueta cuadrada · capacidad alta",
-    materiales: "Cuero vacuno uruguayo. Base reforzada y forrado de algodón.",
-    medidas: "40 cm de ancho · 34 cm de alto · 15 cm de profundidad",
-    queEntra: "Notebook, agenda, billetera, lentes y libreta.",
-    cuidado: "Aplicar crema neutra trimestralmente. Conservar en lugar seco.",
-    disponibilidad: "Sin stock",
-    badge: "SOLD OUT",
-    imagen: bolsoClara,
-  },
-  {
-    nombre: "Bolso Renata",
-    precio: 9200,
-    descripcion:
-      "Diseño amplio con bolsillos exteriores planos y herrajes mate.",
-    descriptor: "Cuero uruguayo · bolsillos planos · herrajes mate",
-    materiales: "Cuero vacuno uruguayo. Bolsillos exteriores planos.",
-    medidas: "41 cm de ancho · 33 cm de alto · 14 cm de profundidad",
-    queEntra: "Notebook 13\", agenda, billetera, llaves y celular.",
-    cuidado: "Hidratar cada tres meses. Evitar contacto con líquidos.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: toteMartina,
-  },
-];
-
-const bolsosMedianos = [
-  {
-    nombre: "Cartera Emilia",
-    precio: 6900,
-    descripcion:
-      "Cartera de tamaño medio, funcional y sobria, ideal para el uso diario.",
-    descriptor: "Cuero uruguayo · correa regulable · bolsillo interno",
-    materiales: "Cuero vacuno uruguayo. Correa regulable y bolsillo interior con cierre.",
-    medidas: "30 cm de ancho · 24 cm de alto · 11 cm de profundidad",
-    queEntra: "Celular, billetera, lentes, llaves y agenda pequeña.",
-    cuidado: "Limpiar con paño suave. Aplicar crema para cuero cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: carteraEmilia,
-  },
-  {
-    nombre: "Morral Ana",
-    precio: 6200,
-    descripcion:
-      "Morral versátil de cuero nacional, pensado para combinar practicidad y diseño.",
-    descriptor: "Cuero uruguayo · cómodo · uso diario",
-    materiales: "Cuero vacuno uruguayo. Hebilla metálica y forrado interior.",
-    medidas: "26 cm de ancho · 22 cm de alto · 10 cm de profundidad",
-    queEntra: "Celular, billetera, libreta pequeña, llaves y lentes.",
-    cuidado: "Limpiar con paño seco. Aplicar crema neutra cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: morralAna,
-  },
-  {
-    nombre: "Cartera Sofía",
-    precio: 7100,
-    descripcion:
-      "Pieza mediana con tapa frontal y herrajes mate. Diseño sereno.",
-    descriptor: "Cuero uruguayo · tapa frontal · herraje mate",
-    materiales: "Cuero vacuno uruguayo. Hebilla metálica color bronce mate.",
-    medidas: "28 cm de ancho · 22 cm de alto · 10 cm de profundidad",
-    queEntra: "Billetera, celular, llaves, lentes y agenda chica.",
-    cuidado: "Hidratar cada tres meses. Mantener alejada de la humedad.",
-    disponibilidad: "Disponible",
-    badge: "NUEVO",
-    imagen: carteraEmilia,
-  },
-  {
-    nombre: "Cartera Camila",
-    precio: 6700,
-    descripcion:
-      "Diseño limpio con bolsillo exterior plano y correa regulable.",
-    descriptor: "Cuero uruguayo · bolsillo plano · correa regulable",
-    materiales: "Cuero vacuno uruguayo. Forrado de algodón crudo.",
-    medidas: "29 cm de ancho · 23 cm de alto · 10 cm de profundidad",
-    queEntra: "Celular, billetera, lentes, llaves.",
-    cuidado: "Limpiar con paño suave. Aplicar crema neutra trimestralmente.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: morralAna,
-  },
-  {
-    nombre: "Cartera Isabel",
-    precio: 7300,
-    descripcion:
-      "Bolso de mano de formato medio con interior organizado.",
-    descriptor: "Cuero uruguayo · interior compartimentado · uso diario",
-    materiales: "Cuero vacuno uruguayo. Dos compartimentos principales.",
-    medidas: "30 cm de ancho · 22 cm de alto · 11 cm de profundidad",
-    queEntra: "Billetera, celular, agenda, llaves y libreta.",
-    cuidado: "Hidratar cada tres meses con crema neutra.",
-    disponibilidad: "Disponible",
-    badge: "OFERTA",
-    imagen: carteraEmilia,
-  },
-  {
-    nombre: "Morral Valentina",
-    precio: 6500,
-    descripcion:
-      "Morral mediano con cierre frontal y formato compacto.",
-    descriptor: "Cuero uruguayo · cierre frontal · diseño compacto",
-    materiales: "Cuero vacuno uruguayo. Hebilla metálica.",
-    medidas: "26 cm de ancho · 21 cm de alto · 9 cm de profundidad",
-    queEntra: "Billetera, celular, libreta pequeña y llaves.",
-    cuidado: "Limpiar con paño seco. Hidratar cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: morralAna,
-  },
-  {
-    nombre: "Cartera Catalina",
-    precio: 7000,
-    descripcion:
-      "Pieza mediana con asas dobles y silueta clásica.",
-    descriptor: "Cuero uruguayo · asas dobles · silueta clásica",
-    materiales: "Cuero vacuno uruguayo. Cierre con cremallera.",
-    medidas: "30 cm de ancho · 24 cm de alto · 11 cm de profundidad",
-    queEntra: "Billetera, celular, lentes, llaves y libreta.",
-    cuidado: "Aplicar crema neutra cada tres meses. Mantener en lugar seco.",
-    disponibilidad: "Sin stock",
-    badge: "SOLD OUT",
-    imagen: carteraEmilia,
-  },
-  {
-    nombre: "Morral Pilar",
-    precio: 6400,
-    descripcion:
-      "Morral con bolsillo frontal exterior y correa regulable.",
-    descriptor: "Cuero uruguayo · bolsillo frontal · correa regulable",
-    materiales: "Cuero vacuno uruguayo. Correa regulable de cuero.",
-    medidas: "27 cm de ancho · 22 cm de alto · 10 cm de profundidad",
-    queEntra: "Celular, billetera, libreta, llaves, lentes.",
-    cuidado: "Hidratar trimestralmente. Evitar humedad.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: morralAna,
-  },
-  {
-    nombre: "Cartera Diana",
-    precio: 7400,
-    descripcion:
-      "Bolso de mano mediano con detalle de costuras a la vista.",
-    descriptor: "Cuero uruguayo · costuras a la vista · sobria",
-    materiales: "Cuero vacuno uruguayo. Costuras de hilo encerado.",
-    medidas: "31 cm de ancho · 23 cm de alto · 11 cm de profundidad",
-    queEntra: "Billetera, celular, agenda, lentes y llaves.",
-    cuidado: "Limpiar con paño suave. Aplicar crema neutra cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: "NUEVO",
-    imagen: carteraEmilia,
-  },
-  {
-    nombre: "Morral Romina",
-    precio: 6600,
-    descripcion:
-      "Morral compacto pensado para el uso diario urbano.",
-    descriptor: "Cuero uruguayo · uso urbano · acceso rápido",
-    materiales: "Cuero vacuno uruguayo. Hebilla magnética interior.",
-    medidas: "27 cm de ancho · 22 cm de alto · 10 cm de profundidad",
-    queEntra: "Billetera, celular, llaves y libreta.",
-    cuidado: "Mantener seco. Hidratar cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: morralAna,
-  },
-];
-
-const bolsosChicos = [
-  {
-    nombre: "Bandolera Julia",
-    precio: 4900,
-    descripcion: "Pieza liviana y práctica para llevar lo esencial con estilo.",
-    descriptor: "Cuero uruguayo · formato compacto · uso liviano",
-    materiales: "Cuero vacuno uruguayo. Cierre metálico y forrado interior de algodón.",
-    medidas: "22 cm de ancho · 18 cm de alto · 8 cm de profundidad",
-    queEntra: "Celular, billetera chica, llaves y lentes.",
-    cuidado: "Limpiar con paño seco. Mantener alejada de la humedad.",
-    disponibilidad: "Disponible",
-    badge: "OFERTA",
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Luna",
-    precio: 5200,
-    descripcion:
-      "Bandolera mini con cierre frontal y correa regulable de cuero.",
-    descriptor: "Cuero uruguayo · mini · correa regulable",
-    materiales: "Cuero vacuno uruguayo. Correa fina regulable.",
-    medidas: "20 cm de ancho · 16 cm de alto · 7 cm de profundidad",
-    queEntra: "Celular, billetera chica, llaves.",
-    cuidado: "Limpiar con paño seco. Hidratar cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Inés",
-    precio: 4700,
-    descripcion: "Bolso pequeño con formato sobre. Para esenciales.",
-    descriptor: "Cuero uruguayo · tipo sobre · esenciales",
-    materiales: "Cuero vacuno uruguayo. Cierre solapa con imán.",
-    medidas: "22 cm de ancho · 14 cm de alto · 5 cm de profundidad",
-    queEntra: "Celular, billetera, llaves, tarjetas.",
-    cuidado: "Mantener seco. Aplicar crema neutra cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Bianca",
-    precio: 5100,
-    descripcion:
-      "Bandolera mini con tapa frontal y herraje a tono.",
-    descriptor: "Cuero uruguayo · tapa frontal · uso liviano",
-    materiales: "Cuero vacuno uruguayo. Hebilla pequeña metálica.",
-    medidas: "21 cm de ancho · 17 cm de alto · 7 cm de profundidad",
-    queEntra: "Celular, billetera chica, llaves, lentes.",
-    cuidado: "Limpiar con paño suave. Evitar humedad.",
-    disponibilidad: "Sin stock",
-    badge: "SOLD OUT",
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Mora",
-    precio: 4800,
-    descripcion:
-      "Pieza chica de formato rectangular con cierre superior.",
-    descriptor: "Cuero uruguayo · rectangular · cierre superior",
-    materiales: "Cuero vacuno uruguayo. Cierre con cremallera metálica.",
-    medidas: "22 cm de ancho · 16 cm de alto · 6 cm de profundidad",
-    queEntra: "Celular, billetera, llaves, lápiz labial.",
-    cuidado: "Hidratar cada tres meses con crema neutra.",
-    disponibilidad: "Disponible",
-    badge: "NUEVO",
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Selena",
-    precio: 5000,
-    descripcion:
-      "Bolso pequeño con detalles artesanales y correa larga.",
-    descriptor: "Cuero uruguayo · correa larga · detalles artesanales",
-    materiales: "Cuero vacuno uruguayo. Correa larga ajustable.",
-    medidas: "23 cm de ancho · 17 cm de alto · 7 cm de profundidad",
-    queEntra: "Celular, billetera, llaves, lentes.",
-    cuidado: "Mantener seco. Aplicar crema trimestral.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Adela",
-    precio: 5300,
-    descripcion:
-      "Bolso de uso liviano, ideal para días sin agenda.",
-    descriptor: "Cuero uruguayo · liviano · esenciales",
-    materiales: "Cuero vacuno uruguayo. Bolsillo interior plano.",
-    medidas: "21 cm de ancho · 17 cm de alto · 7 cm de profundidad",
-    queEntra: "Celular, billetera, llaves y tarjetas.",
-    cuidado: "Limpiar con paño seco. Hidratar trimestralmente.",
-    disponibilidad: "Disponible",
-    badge: "OFERTA",
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Tamara",
-    precio: 4600,
-    descripcion:
-      "Bolso compacto con bolsillo trasero exterior.",
-    descriptor: "Cuero uruguayo · bolsillo trasero · uso diario",
-    materiales: "Cuero vacuno uruguayo. Bolsillo trasero abierto.",
-    medidas: "22 cm de ancho · 17 cm de alto · 6 cm de profundidad",
-    queEntra: "Celular, billetera, llaves, lentes.",
-    cuidado: "Aplicar crema neutra cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Yael",
-    precio: 4500,
-    descripcion:
-      "Bolso pequeño con costura central y formato vertical.",
-    descriptor: "Cuero uruguayo · vertical · costura central",
-    materiales: "Cuero vacuno uruguayo. Cierre cremallera metálica.",
-    medidas: "18 cm de ancho · 22 cm de alto · 6 cm de profundidad",
-    queEntra: "Celular, billetera, tarjetas, llaves.",
-    cuidado: "Limpiar con paño seco. Hidratar trimestralmente.",
-    disponibilidad: "Disponible",
-    badge: null,
-    imagen: bandoleraJulia,
-  },
-  {
-    nombre: "Bandolera Zoe",
-    precio: 5400,
-    descripcion:
-      "Modelo pequeño con tapa larga frontal y herraje mate.",
-    descriptor: "Cuero uruguayo · tapa larga · herraje mate",
-    materiales: "Cuero vacuno uruguayo. Tapa frontal y herraje mate.",
-    medidas: "23 cm de ancho · 18 cm de alto · 7 cm de profundidad",
-    queEntra: "Celular, billetera, llaves, lentes.",
-    cuidado: "Mantener en lugar seco. Hidratar cada tres meses.",
-    disponibilidad: "Disponible",
-    badge: "NUEVO",
-    imagen: bandoleraJulia,
+    imagen: p9,
   },
 ];
 
@@ -471,7 +178,7 @@ const mochilas = [
     cuidado: "Limpiar con paño seco. Hidratar cada tres meses.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: mochilaVera,
+    imagen: pia7,
   },
   {
     nombre: "Mochila Fiorella",
@@ -485,7 +192,7 @@ const mochilas = [
     cuidado: "Hidratar cada tres meses con crema neutra.",
     disponibilidad: "Disponible",
     badge: "NUEVO",
-    imagen: mochilaVera,
+    imagen: pia8,
   },
   {
     nombre: "Mochila Gabriela",
@@ -499,7 +206,7 @@ const mochilas = [
     cuidado: "Limpiar con paño seco. Hidratar trimestralmente.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: mochilaVera,
+    imagen: pia9,
   },
   {
     nombre: "Mochila Antonella",
@@ -513,7 +220,7 @@ const mochilas = [
     cuidado: "Mantener en lugar seco. Aplicar crema cada tres meses.",
     disponibilidad: "Sin stock",
     badge: "SOLD OUT",
-    imagen: mochilaVera,
+    imagen: pia10,
   },
   {
     nombre: "Mochila Ursula",
@@ -526,7 +233,7 @@ const mochilas = [
     cuidado: "Hidratar cada tres meses. Evitar humedad.",
     disponibilidad: "Disponible",
     badge: "OFERTA",
-    imagen: mochilaVera,
+    imagen: pia11,
   },
   {
     nombre: "Mochila Victoria",
@@ -540,7 +247,7 @@ const mochilas = [
     cuidado: "Limpiar con paño suave. Hidratar cada tres meses.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: mochilaVera,
+    imagen: pia12,
   },
   {
     nombre: "Mochila Ximena",
@@ -554,7 +261,7 @@ const mochilas = [
     cuidado: "Hidratar trimestralmente. Mantener seco.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: mochilaVera,
+    imagen: pia13,
   },
   {
     nombre: "Mochila Berta",
@@ -568,7 +275,7 @@ const mochilas = [
     cuidado: "Limpiar con paño seco. Hidratar cada tres meses.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: mochilaVera,
+    imagen: pia14,
   },
   {
     nombre: "Mochila Cecilia",
@@ -582,21 +289,120 @@ const mochilas = [
     cuidado: "Aplicar crema neutra trimestralmente.",
     disponibilidad: "Disponible",
     badge: "NUEVO",
-    imagen: mochilaVera,
+    imagen: pia15,
+  },
+];
+
+const bolsosChicos = [
+  {
+    nombre: "Bandolera Julia",
+    precio: 4900,
+    descripcion: "Pieza liviana y práctica para llevar lo esencial con estilo.",
+    descriptor: "Cuero uruguayo · formato compacto · uso liviano",
+    materiales: "Cuero vacuno uruguayo. Cierre metálico y forrado interior de algodón.",
+    medidas: "22 cm de ancho · 18 cm de alto · 8 cm de profundidad",
+    queEntra: "Celular, billetera chica, llaves y lentes.",
+    cuidado: "Limpiar con paño seco. Mantener alejada de la humedad.",
+    disponibilidad: "Disponible",
+    badge: "OFERTA",
+    imagen: p10,
   },
   {
-    nombre: "Mochila Margarita",
-    precio: 8000,
+    nombre: "Bandolera Luna",
+    precio: 5200,
     descripcion:
-      "Mochila amplia con base reforzada y cierre robusto.",
-    descriptor: "Cuero uruguayo · base reforzada · cierre robusto",
-    materiales: "Cuero vacuno uruguayo. Base reforzada con cuero doble.",
-    medidas: "30 cm de ancho · 39 cm de alto · 15 cm de profundidad",
-    queEntra: "Notebook 14\", agenda, neceser, billetera y lentes.",
-    cuidado: "Hidratar trimestralmente. Mantener en lugar seco.",
+      "Bandolera mini con cierre frontal y correa regulable de cuero.",
+    descriptor: "Cuero uruguayo · mini · correa regulable",
+    materiales: "Cuero vacuno uruguayo. Correa fina regulable.",
+    medidas: "20 cm de ancho · 16 cm de alto · 7 cm de profundidad",
+    queEntra: "Celular, billetera chica, llaves.",
+    cuidado: "Limpiar con paño seco. Hidratar cada tres meses.",
     disponibilidad: "Disponible",
     badge: null,
-    imagen: mochilaVera,
+    imagen: p11,
+  },
+  {
+    nombre: "Bandolera Inés",
+    precio: 4700,
+    descripcion: "Bolso pequeño con formato sobre. Para esenciales.",
+    descriptor: "Cuero uruguayo · tipo sobre · esenciales",
+    materiales: "Cuero vacuno uruguayo. Cierre solapa con imán.",
+    medidas: "22 cm de ancho · 14 cm de alto · 5 cm de profundidad",
+    queEntra: "Celular, billetera, llaves, tarjetas.",
+    cuidado: "Mantener seco. Aplicar crema neutra cada tres meses.",
+    disponibilidad: "Disponible",
+    badge: null,
+    imagen: p12,
+  },
+  {
+    nombre: "Bandolera Bianca",
+    precio: 5100,
+    descripcion:
+      "Bandolera mini con tapa frontal y herraje a tono.",
+    descriptor: "Cuero uruguayo · tapa frontal · uso liviano",
+    materiales: "Cuero vacuno uruguayo. Hebilla pequeña metálica.",
+    medidas: "21 cm de ancho · 17 cm de alto · 7 cm de profundidad",
+    queEntra: "Celular, billetera chica, llaves, lentes.",
+    cuidado: "Limpiar con paño suave. Evitar humedad.",
+    disponibilidad: "Sin stock",
+    badge: "SOLD OUT",
+    imagen: p13,
+  },
+  {
+    nombre: "Bandolera Mora",
+    precio: 4800,
+    descripcion:
+      "Pieza chica de formato rectangular con cierre superior.",
+    descriptor: "Cuero uruguayo · rectangular · cierre superior",
+    materiales: "Cuero vacuno uruguayo. Cierre con cremallera metálica.",
+    medidas: "22 cm de ancho · 16 cm de alto · 6 cm de profundidad",
+    queEntra: "Celular, billetera, llaves, lápiz labial.",
+    cuidado: "Hidratar cada tres meses con crema neutra.",
+    disponibilidad: "Disponible",
+    badge: "NUEVO",
+    imagen: p14,
+  },
+  {
+    nombre: "Bandolera Selena",
+    precio: 5000,
+    descripcion:
+      "Bolso pequeño con detalles artesanales y correa larga.",
+    descriptor: "Cuero uruguayo · correa larga · detalles artesanales",
+    materiales: "Cuero vacuno uruguayo. Correa larga ajustable.",
+    medidas: "23 cm de ancho · 17 cm de alto · 7 cm de profundidad",
+    queEntra: "Celular, billetera, llaves, lentes.",
+    cuidado: "Mantener seco. Aplicar crema trimestral.",
+    disponibilidad: "Disponible",
+    badge: null,
+    imagen: pia1,
+  },
+  {
+    nombre: "Bandolera Adela",
+    precio: 5300,
+    descripcion:
+      "Bolso de uso liviano, ideal para días sin agenda.",
+    descriptor: "Cuero uruguayo · liviano · esenciales",
+    materiales: "Cuero vacuno uruguayo. Bolsillo interior plano.",
+    medidas: "21 cm de ancho · 17 cm de alto · 7 cm de profundidad",
+    queEntra: "Celular, billetera, llaves y tarjetas.",
+    cuidado: "Limpiar con paño seco. Hidratar trimestralmente.",
+    disponibilidad: "Disponible",
+    badge: "OFERTA",
+    imagen: pia5,
+  },
+  {
+    nombre: "Bandolera Tamara",
+    precio: 4600,
+    descripcion:
+      "Bolso compacto con bolsillo trasero exterior.",
+    descriptor: "Cuero uruguayo · bolsillo trasero · uso diario",
+    materiales: "Cuero vacuno uruguayo. Bolsillo trasero abierto.",
+    medidas: "22 cm de ancho · 17 cm de alto · 6 cm de profundidad",
+    queEntra: "Celular, billetera, llaves, lentes.",
+    cuidado: "Aplicar crema neutra cada tres meses.",
+    disponibilidad: "Disponible",
+    badge: null,
+    imagen: pia6,
   },
 ];
 
@@ -610,7 +416,6 @@ const construir = (lista, categoria, offsetId) =>
 
 export const productos = [
   ...construir(bolsosGrandes, "Bolsos grandes", 1),
-  ...construir(bolsosMedianos, "Bolsos medianos", 11),
+  ...construir(mochilas, "Mochilas", 11),
   ...construir(bolsosChicos, "Bolsos chicos", 21),
-  ...construir(mochilas, "Mochilas", 31),
 ];

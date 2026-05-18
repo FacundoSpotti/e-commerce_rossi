@@ -25,47 +25,51 @@ function App() {
 
   const agregarAlCarrito = (producto) => {
     setCarrito((actual) => {
-      const existente = actual.find((it) => it.id === producto.id);
+      const colorSeleccionado = producto.colorSeleccionado || producto.swatches[0];
+      const cartId = `${producto.id}-${colorSeleccionado}`;
+      const existente = actual.find((it) => (it.cartId || `${it.id}-${it.colorSeleccionado || it.swatches[0]}`) === cartId);
       if (existente) {
         return actual.map((it) =>
-          it.id === producto.id ? { ...it, cantidad: it.cantidad + 1 } : it
+          (it.cartId || `${it.id}-${it.colorSeleccionado || it.swatches[0]}`) === cartId ? { ...it, cantidad: it.cantidad + 1 } : it
         );
       }
       return [
         ...actual,
         {
           id: producto.id,
+          cartId,
           nombre: producto.nombre,
           precio: producto.precio,
           imagen: producto.imagen,
           descriptor: producto.descriptor,
           swatches: producto.swatches,
+          colorSeleccionado,
           cantidad: 1,
         },
       ];
     });
   };
 
-  const sumarItem = (id) => {
+  const sumarItem = (idOrCartId) => {
     setCarrito((actual) =>
       actual.map((it) =>
-        it.id === id ? { ...it, cantidad: it.cantidad + 1 } : it
+        (it.cartId === idOrCartId || it.id === idOrCartId) ? { ...it, cantidad: it.cantidad + 1 } : it
       )
     );
   };
 
-  const restarItem = (id) => {
+  const restarItem = (idOrCartId) => {
     setCarrito((actual) =>
       actual
         .map((it) =>
-          it.id === id ? { ...it, cantidad: it.cantidad - 1 } : it
+          (it.cartId === idOrCartId || it.id === idOrCartId) ? { ...it, cantidad: it.cantidad - 1 } : it
         )
         .filter((it) => it.cantidad > 0)
     );
   };
 
-  const eliminarItem = (id) => {
-    setCarrito((actual) => actual.filter((it) => it.id !== id));
+  const eliminarItem = (idOrCartId) => {
+    setCarrito((actual) => actual.filter((it) => it.cartId !== idOrCartId && it.id !== idOrCartId));
   };
 
   const ingresarUsuario = (email, nombre) => {

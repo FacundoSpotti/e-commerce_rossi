@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  height: 72px;
+  height: 8vh;
   padding: 0 24px;
 }
 
@@ -296,8 +296,8 @@
 /* ========== HOME ========== */
 .hero {
   width: 100%;
-  min-height: 78vh;
-  background: var(--accent-sand);
+  min-height: 92vh;
+  background-color: var(--negro);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,7 +443,7 @@
 
 .grid-categorias {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin-bottom: 0;
 }
@@ -460,11 +460,13 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  transition: transform 0.6s;
+  filter: grayscale(100%);
+  transition: transform 0.6s ease, filter 0.6s ease;
 }
 
 .categoria-card:hover .categoria-card-foto {
   transform: scale(1.04);
+  filter: grayscale(0%);
 }
 
 .categoria-card-overlay {
@@ -515,9 +517,10 @@
 
 .producto-card-categoria {
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 14px;
-  transform: none;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.22em;
@@ -666,30 +669,32 @@
 .catalogo-cabecera {
   text-align: center;
   padding: 60px 0 40px;
+  background-color: var(--negro);
+  color: var(--crema);
 }
 
 .catalogo-cabecera h1 {
   font-size: 44px;
   margin-bottom: 14px;
+  color: var(--crema);
 }
 
 .catalogo-cabecera .subtitulo-grande {
   font-size: 22px;
   font-weight: 500;
-  color: var(--negro);
+  color: var(--crema);
   margin-bottom: 18px;
   font-family: var(--serif);
 }
 
 .catalogo-cabecera p {
-  color: var(--gris-texto);
+  color: var(--crema);
   max-width: 580px;
   margin: 0 auto;
 }
 
 .filtros-bleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
   background: var(--bg-offwhite);
   border-bottom: 1px solid var(--gris-borde);
   padding: 22px 24px;
@@ -1435,12 +1440,12 @@
 /* ========== INSTITUCIONAL ========== */
 .institucional {
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
   max-width: 720px;
   margin: 0 auto;
 }
 
-.institucional h2 {
+.cional h2 {
   font-size: 32px;
   margin-bottom: 16px;
   line-height: 1.25;
@@ -1499,7 +1504,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-categorias {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .detalle {
     grid-template-columns: 1fr;

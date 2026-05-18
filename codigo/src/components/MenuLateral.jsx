@@ -36,6 +36,9 @@ function MenuLateral({ abierto, onCerrar, usuarioActivo }) {
           <NavLink to="/catalogo" onClick={handleClickLink}>
             Catálogo
           </NavLink>
+          <NavLink to="/catalogo?cat=Mochilas" onClick={handleClickLink}>
+            Mochilas
+          </NavLink>
           <NavLink
             to="/catalogo?cat=Bolsos+grandes"
             onClick={handleClickLink}
@@ -43,19 +46,10 @@ function MenuLateral({ abierto, onCerrar, usuarioActivo }) {
             Bolsos grandes
           </NavLink>
           <NavLink
-            to="/catalogo?cat=Bolsos+medianos"
-            onClick={handleClickLink}
-          >
-            Bolsos medianos
-          </NavLink>
-          <NavLink
             to="/catalogo?cat=Bolsos+chicos"
             onClick={handleClickLink}
           >
             Bolsos chicos
-          </NavLink>
-          <NavLink to="/catalogo?cat=Mochilas" onClick={handleClickLink}>
-            Mochilas
           </NavLink>
           <NavLink to="/#taller" onClick={handleClickLink}>
             Nuestro taller

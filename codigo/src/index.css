@@ -56,6 +56,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -140,6 +141,35 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+.btn-crema {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--text-black);
+  background: var(--crema);
+  color: var(--text-black);
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-crema:hover {
+  background: var(--negro);
+  color: var(--crema);
+  border: 1px solid var(--crema);
+}
+
+.btn-crema:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .btn {
