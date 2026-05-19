@@ -36,10 +36,10 @@ function Header({ carrito, usuarioActivo, queryBusqueda, onCambiarBusqueda }) {
             <button
               type="button"
               className="header-trigger"
-              onClick={() => setMenuAbierto(true)}
+              onClick={() => setMenuAbierto(true)} //cuando se hace click en el menu hamburguesa, se abre el menu lateral
               aria-label="Abrir menú"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"> //se crea el menu hamburguesa con tres lineas horizontales
                 <line x1="4" y1="7" x2="20" y2="7" />
                 <line x1="4" y1="12" x2="20" y2="12" />
                 <line x1="4" y1="17" x2="20" y2="17" />
@@ -52,7 +52,7 @@ function Header({ carrito, usuarioActivo, queryBusqueda, onCambiarBusqueda }) {
               onClick={abrirBuscar}
               aria-label="Buscar"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"> //se crea la lupa con un circulo y una linea diagonal
                 <circle cx="11" cy="11" r="7" />
                 <line x1="20" y1="20" x2="16.5" y2="16.5" />
               </svg>
@@ -75,7 +75,7 @@ function Header({ carrito, usuarioActivo, queryBusqueda, onCambiarBusqueda }) {
               </Link>
             )}
             <Link to="/carrito" className="carrito-icono" aria-label="Ver carrito">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"> //se crea el carrito con un circulo y una linea diagonal
                 <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
                 <path d="M3 6h18" />
                 <path d="M16 10a4 4 0 0 1-8 0" />
@@ -88,7 +88,7 @@ function Header({ carrito, usuarioActivo, queryBusqueda, onCambiarBusqueda }) {
         {buscarAbierto && (
           <form className="header-buscar" onSubmit={handleBuscarSubmit}>
             <div className="header-buscar-inner">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"> //se crea la lupa con un circulo y una linea diagonal
                 <circle cx="11" cy="11" r="7" />
                 <line x1="20" y1="20" x2="16.5" y2="16.5" />
               </svg>
@@ -108,7 +108,7 @@ function Header({ carrito, usuarioActivo, queryBusqueda, onCambiarBusqueda }) {
                 }}
                 aria-label="Cerrar búsqueda"
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">  //se crea la x para cerrar la busqueda
                   <line x1="5" y1="5" x2="19" y2="19" />
                   <line x1="19" y1="5" x2="5" y2="19" />
                 </svg>

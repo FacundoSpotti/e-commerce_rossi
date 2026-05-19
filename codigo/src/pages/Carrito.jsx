@@ -5,7 +5,7 @@ import ResumenPedido from "../components/ResumenPedido";
 function Carrito({ carrito, onSumar, onRestar, onEliminar }) {
   const navigate = useNavigate();
 
-  if (carrito.length === 0) {
+  if (carrito.length === 0) { //si el carrito esta vacio, muestra un mensaje de que esta vacio
     return (
       <div className="container carrito-vacio">
         <p className="sobrelinea">Carrito</p>
