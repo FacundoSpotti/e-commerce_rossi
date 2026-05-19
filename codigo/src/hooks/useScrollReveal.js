@@ -5,7 +5,7 @@ export function useScrollReveal() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => { //useeffecto, otro hook que permite ejecutar codigo cuando el componente se carga y cada vez que cambia
+  useEffect(() => { //useEffect, otro hook que permite ejecutar codigo cuando el componente se carga y cada vez que cambia
     const el = ref.current;
     if (!el) return;
     const io = new IntersectionObserver(
