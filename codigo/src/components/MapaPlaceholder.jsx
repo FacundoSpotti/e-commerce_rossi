@@ -1,3 +1,16 @@
+//mapa
+import {
+
+  MapContainer,
+  TileLayer,
+  Marker, 
+  Popup
+
+} from "react-leaflet"
+
+import "leaflet"
+import "leaflet/dist/leaflet.css"
+
 function MapaPlaceholder() {
   return (
     <section className="mapa-bloque">
@@ -8,8 +21,27 @@ function MapaPlaceholder() {
         trabajo de Verónica, las visitas se coordinan con cita previa por
         WhatsApp o correo.
       </p>
+
+    <MapContainer
+      center={[-34.889791212111895, -56.18002935401105]}
+      zoom={13}
+      style={{
+        height: "1500px",
+        width: "1500px",
+      }}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+
+      <Marker position={[-34.889791212111895, -56.18002935401105]}>
+      </Marker>
+    </MapContainer>
+
     </section>
   );
+  
 }
 
 export default MapaPlaceholder;
