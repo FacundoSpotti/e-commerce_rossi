@@ -7,10 +7,10 @@ import { productos } from "../data/productos";
 import filtroMochilas from "../assets/categorias/filtro (2).png";
 import filtroGrandes from "../assets/categorias/filtro (3).png";
 import filtroChicos from "../assets/categorias/filtro (4).png";
-import stock1 from "../assets/stock (1).jpg";
-import stock2 from "../assets/stock (2).jpg";
-import stock3 from "../assets/stock (3).jpg";
-import banda from "../assets/banda.png";
+import stock1 from "../assets/stock/stock (1).jpg";
+import stock2 from "../assets/stock/stock (2).jpg";
+import stock3 from "../assets/stock/stock (3).jpg";
+import banda from "../assets/stock/banda.png";
 
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
