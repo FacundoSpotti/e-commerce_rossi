@@ -26,8 +26,8 @@ function MapaPlaceholder() {
       center={[-34.889791212111895, -56.18002935401105]}
       zoom={13}
       style={{
-        height: "1500px",
-        width: "1500px",
+        height: "100vh",
+        width: "100%",
       }}
     >
       <TileLayer
