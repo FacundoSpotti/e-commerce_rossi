@@ -35,8 +35,21 @@ function MapaPlaceholder() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <Marker position={[-34.889791212111895, -56.18002935401105]}>
-      </Marker>
+        <Marker
+          position={[-34.88, -56.18]}
+          opacity={0.5}
+          title="Taller de Rossi"
+          zIndexOffset={1000}
+          riseOnHover={true}
+        >
+
+        <Popup>
+          <h2>Rossi</h2>
+          <p>Tienda de carteras</p>
+        </Popup>
+
+        </Marker>
+
     </MapContainer>
 
     </section>
